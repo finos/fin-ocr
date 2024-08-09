@@ -32,18 +32,14 @@ Usage: ocr check scan <path-to-check-image>
 
 ### How to determine the reason for a check mismatch
 
-This section provides a tutorial to help you determine the reason for a sample check mismatch.  See the check at `CLI-DIR/data/check-1.tiff` that we will debug.  
+This section provides a tutorial to help you determine the reason for a sample check mismatch.  Assume that the OCR of your `$HOME/.fin-ocr/checks/check-1.tiff` check image does not match.  
 
-> NOTE: At the time of writing this documentation, this check is not correctly OCR'ed.  As the SDK improves, this mismatch may no longer occur; however, this will still serve as a useful debugging example.
-
-From your CLI-DIR directory, execute the following command:
+Execute the following command:
 ```
-CHECKS_DIR=./data/checks ocr check test 1
+ocr check test 1
 ```
 
-Note that the `CHECKS_DIR` environment variable points to the `./data/checks` directory which contains the file `check-1.tiff` and the ground truth in `check-1.json`.
-
-You will see that a mismatch occurs for this check from the following lines of output (assuming SDK improvements have not already fixed this):
+You will see that a mismatch occurs for this check from the following lines of output:
 ```
 ...
 2024-07-30T11:41:43.897Z inf cli Check 1: match=false (0.00%)
@@ -53,7 +49,7 @@ You will see that a mismatch occurs for this check from the following lines of o
 
 Next, use the following command to determine why the mismatch occurred.
 ```
-CHECKS_DIR=./data/checks ocr check debug 1
+ocr check debug 1
 ```
 
 > NOTE: If there were multiple checks to debug at the same time, you could provide a comma-separated list of check numbers as was logged by the `ocr check test` command.
@@ -66,7 +62,7 @@ The output from the `ocr check debug` command includes the following:
 ```
 
 Open the file `html/debugImages.html` in your browser
-and then click on `check 1`.  This will take you to an HTML page containing a sequence of images (e.g. 1 through 67) which demonstrate the steps taken by the SDK when performing OCR on the check image.
+and then click on `check 1`.  This will take you to an HTML page containing a sequence of images which demonstrate the steps taken by the SDK when performing OCR on the check image.
 
 The first image is the original image being processed.
 
@@ -74,9 +70,9 @@ If you scroll to the bottom, you'll see the "MICR" line that was located.
 
 > NOTE: See the [architecture diagram](https://github.com/discoverfinancial/fin-ocr/blob/main/ARCHITECTURE.md) and note that the "Core OCR" process occurs in two phases: first a preprocessing phase and second the translation phase.
 
-If the MICR line was not properly located, then the problem occurred in the preprocessing phase, so you'll want to look at previous images to determine why the location logic failed.  For example, in this case, the MICR line includes extra noise to the left of the first MICR character as well as to the right of the last MICR character.  This tells us to look at previous images which reveals that the wavy background lines which are in the original image have been accentuated and confused the location logic.
+If the MICR line was not properly located, then the problem occurred in the preprocessing phase, so you'll want to look at previous images to determine why the location logic failed.  For example, perhaps skew correction failed.
 
-If the MICR line was correctly located but one or both of the translators failed, then the problem occurred in one of the translators, which tells us where to focus.
+However, if the MICR line was correctly located but one or both of the translators failed, then the problem occurred in one of the translators, which tells us where to focus.
 
 ### How to train and test with a new tesseract traineddata file
 
