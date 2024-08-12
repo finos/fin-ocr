@@ -45,36 +45,46 @@ Ensure you have the following installed on your system:
 
 ### Clone the Repositories
 
-To set up the `fin-ocr` family of repositories, you can use the provided scripts to clone all necessary repositories into the same directory.
+To set up the `fin-ocr` family of repositories, you have two options:
+
+1. **Use the provided scripts:**
+   This repository includes copies of `clone_repos.sh` for Linux/Mac and `clone_repos.bat` for Windows. You can simply run these scripts to clone all the required repositories.
+
+2. **Manual setup:**
+   If you prefer, you can also manually create the `clone_repos.sh` or `clone_repos.bat` scripts as described below and run them.
+
+**Note:** We will be publishing the SDK to npm in the future. However, for now, cloning all repositories to the same directory is the best way to manage building the projects, as the SDK is not yet published to npm.
+
+After cloning the repositories, navigate to each repository's directory and follow the instructions in their respective README (e.g. `npm run build'). In the future we will be
 
 #### On Linux/Mac:
-1. Save the script below as `clone_repos.sh` and run it:
+1. Save the script below as `clone_repos.sh` and run it (or copy the included version from this repo):
 
-    ```bash
-    #!/bin/bash
+```bash
+#!/bin/bash
 
-    repos=(
-        "https://github.com/discoverfinancial/fin-ocr-sdk"
-        "https://github.com/discoverfinancial/fin-ocr-web"
-        "https://github.com/discoverfinancial/fin-ocr-cli"
-        "https://github.com/discoverfinancial/fin-ocr-browser"
-        "https://github.com/discoverfinancial/fin-ocr-train"
-    )
-    # remove the comments below to use ssh instead
-    #repos=(
-    #    "git@github.com:discoverfinancial/fin-ocr-sdk.git"
-    #    "git@github.com:discoverfinancial/fin-ocr-web.git"
-    #    "git@github.com:discoverfinancial/fin-ocr-cli.git"
-    #    "git@github.com:discoverfinancial/fin-ocr-browser.git"
-    #    "git@github.com:discoverfinancial/fin-ocr-train.git"
-    #)
+repos=(
+  "https://github.com/discoverfinancial/fin-ocr-sdk"
+  "https://github.com/discoverfinancial/fin-ocr-web"
+  "https://github.com/discoverfinancial/fin-ocr-cli"
+  "https://github.com/discoverfinancial/fin-ocr-browser"
+  "https://github.com/discoverfinancial/fin-ocr-train"
+)
+# remove the comments below to use ssh instead
+#repos=(
+#    "git@github.com:discoverfinancial/fin-ocr-sdk.git"
+#    "git@github.com:discoverfinancial/fin-ocr-web.git"
+#    "git@github.com:discoverfinancial/fin-ocr-cli.git"
+#    "git@github.com:discoverfinancial/fin-ocr-browser.git"
+#    "git@github.com:discoverfinancial/fin-ocr-train.git"
+#)
 
-    for repo in "${repos[@]}"; do
-        git clone "$repo"
-    done
+for repo in "${repos[@]}"; do
+  git clone "$repo"
+done
 
-    echo "All repositories cloned successfully."
-    ```
+echo "All repositories cloned successfully."
+```
 
 2. Run the script:
 
@@ -84,56 +94,33 @@ To set up the `fin-ocr` family of repositories, you can use the provided scripts
     ```
 
 #### On Windows:
-1. Save the script below as `clone_repos.bat` and run it:
+1. Save the script below as `clone_repos.bat` and run it (or copy the included version from this repo):
 
-    ```bat
-    @echo off
+```bat
+@echo off
 
-    set repos[0]=https://github.com/discoverfinancial/fin-ocr-sdk
-    set repos[1]=https://github.com/discoverfinancial/fin-ocr-web
-    set repos[2]=https://github.com/discoverfinancial/fin-ocr-cli
-    set repos[3]=https://github.com/discoverfinancial/fin-ocr-browser
-    set repos[4]=https://github.com/discoverfinancial/fin-ocr-train
+set repos[0]=https://github.com/discoverfinancial/fin-ocr-sdk
+set repos[1]=https://github.com/discoverfinancial/fin-ocr-web
+set repos[2]=https://github.com/discoverfinancial/fin-ocr-cli
+set repos[3]=https://github.com/discoverfinancial/fin-ocr-browser
+set repos[4]=https://github.com/discoverfinancial/fin-ocr-train
 
-    REM Uncomment the following lines to use SSH instead of HTTPS
-    REM set repos[0]=git@github.com:discoverfinancial/fin-ocr-sdk.git
-    REM set repos[1]=git@github.com:discoverfinancial/fin-ocr-web.git
-    REM set repos[2]=git@github.com:discoverfinancial/fin-ocr-cli.git
-    REM set repos[3]=git@github.com:discoverfinancial/fin-ocr-browser.git
-    REM set repos[4]=git@github.com:discoverfinancial/fin-ocr-train.git
+REM Uncomment the following lines to use SSH instead of HTTPS
+REM set repos[0]=git@github.com:discoverfinancial/fin-ocr-sdk.git
+REM set repos[1]=git@github.com:discoverfinancial/fin-ocr-web.git
+REM set repos[2]=git@github.com:discoverfinancial/fin-ocr-cli.git
+REM set repos[3]=git@github.com:discoverfinancial/fin-ocr-browser.git
+REM set repos[4]=git@github.com:discoverfinancial/fin-ocr-train.git
 
-    for %%i in (0,1,2,3,4) do (
-        git clone !repos[%%i]!
-    )
+for %%i in (0,1,2,3,4) do (
+    git clone !repos[%%i]!
+)
 
-    echo All repositories cloned successfully.
-    pause
-    ```
+echo All repositories cloned successfully.
+pause
+```
 
-2. Double-click the script to execute.
-
-### Setting Up Each Repository
-
-After cloning the repositories, navigate to each repository's directory and follow the instructions in their respective README files for further setup. For example:
-
-1. `fin-ocr-sdk`:
-   - Run `npm install` to install dependencies.
-   - Run `npm run build` to build the SDK.
-
-2. `fin-ocr-web`:
-   - Run `npm install` to install dependencies.
-   - Run `npm run build` to build the web service.
-
-3. `fin-ocr-cli`:
-   - Run `npm install` to install dependencies.
-   - Run `npm run build` to build the CLI.
-
-4. `fin-ocr-browser`:
-   - Run `npm install` to install dependencies.
-   - Run `npm run build` to build the browser demo.
-
-5. `fin-ocr-train`:
-   - Follow the training instructions in the repository's README.
+2. Execute the script
 
 ### Exploring the OCR System
 
