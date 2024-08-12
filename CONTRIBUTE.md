@@ -13,8 +13,8 @@ We welcome any feedback on the quality, stability, functionality, or performance
 2. If there isn't already a relevant issue, create one using one of the provided templates.  Please provide the following information:
     3. Add appropriate tag for type of issue -> [`bug`, `enhancement`]
     4. (optional) Add tag for required specialties -> [`design thinking`, `project management`, `question`, `documentation`]
-    5. Set `Projects` field to `FIN-OCR`
-3. If you are reporting a problem that exists in a FIN-OCR repository, try to convey answers for the following:
+    5. Set `Projects` field to `fin-ocr`
+3. If you are reporting a problem that exists in a fin-ocr repository, try to convey answers for the following:
     * Is the bug reproducible as explained?
     * Is it reproducible in other environments (for instance, on different browsers or devices)?
     * Are the steps to reproduce the bug clear? If not, can you describe how you might reproduce it?  Please provide as much relevant information as possible and break the instructions for reproducing the problem into clear, simple steps.
@@ -35,7 +35,7 @@ If there isn't already a similar feature request, please create one using the ap
 
 In general terms, an Epic is a reasonably large piece of work that is built from smaller pieces of work on which it depends.  These smaller pieces of work may themselves be Epics that have their own dependencies.  So if you think of an individual, well-defined, self-contained piece of work as being represented as an issue in an issue tracking system, an Epic is comprised of such issues.  The issues contained in an Epic may need to be completed in a general order and that order should be defined in the Epic.  In practice, Epics are usually feature/enhancement requests that summarize a piece of functionality that a user would like to see implemented in a project.  The Epic would describe the problem, the potential solution, and a plan for how that work could be achieved.  After the plan is formed, issues would be created in order to track each individual piece of work of which the plan consists.  The issues would then be assigned owners to complete the work.
 
-In FIN-OCR, we prefer that Epics be created with the help of maintainers.  A maintainer creating an epic should prepend the key string `[EPIC]` to the Epic's title.  The maintainer should make sure that Tasks are defined in the Epic as individual pieces of work are defined.  Each Task should be tracked using an issue.  In that issue, all pieces of work on which the issue depends should be defined and, where possible, linked to.  The overall result, once this is accomplished, is that a user should be able to go to an Epic, see a summary of the work that the Epic represents, should be able to see the tasks that, when put together, achieve the end goal of the Epic, the order in which the tasks need to be undertaken, and what dependencies each task has.
+In fin-ocr, we prefer that Epics be created with the help of maintainers.  A maintainer creating an epic should prepend the key string `[EPIC]` to the Epic's title.  The maintainer should make sure that Tasks are defined in the Epic as individual pieces of work are defined.  Each Task should be tracked using an issue.  In that issue, all pieces of work on which the issue depends should be defined and, where possible, linked to.  The overall result, once this is accomplished, is that a user should be able to go to an Epic, see a summary of the work that the Epic represents, should be able to see the tasks that, when put together, achieve the end goal of the Epic, the order in which the tasks need to be undertaken, and what dependencies each task has.
 
 If you have any questions about Epics, please [reach out to our maintainers](https://github.com/discoverfinancial/fin-ocr/wiki/Maintainers-&-Contributors) for assistance.
 
@@ -86,7 +86,7 @@ answer our [call for contributions](https://github.com/discoverfinancial/fin-ocr
   * `kebab-case`: Directories and file names
   * `UPPERCASE`: Some root markdown files that are commonly all caps
 
-While FIN-OCR repositories are unable to accept pull requests or code contributions of any kind, we are eager to collaborate with you and share ideas on how you can best use FIN-OCR in your projects and listen to your ideas on how FIN-OCR can be improved.
+While fin-ocr repositories are unable to accept pull requests or code contributions of any kind, we are eager to collaborate with you and share ideas on how you can best use fin-ocr in your projects and listen to your ideas on how fin-ocr can be improved.
 
 ## Team members
 
@@ -147,7 +147,7 @@ Testing new releases and/or features is a great way to contribute to the communi
 Report](https://github.com/discoverfinancial/fin-ocr/issues).
 
 ## Documentation
-Currently, the bulk of the FIN-OCR documentation lives in the code and in the [README](./README.md).
+Currently, the bulk of the fin-ocr documentation lives in the code and in the [README](./README.md).
 
 If you find gaps, issues or can suggest improvements in our documentation, please submit an [Issue/Feature 
 Report](https://github.com/discoverfinancial/fin-ocr/issues).
