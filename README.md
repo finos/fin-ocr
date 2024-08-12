@@ -11,9 +11,9 @@ The *fin-ocr-\** repositories are as follows:
 | Name | Description |
 | ---- | ----------- |
 | [fin-ocr](https://github.com/discoverfinancial/fin-ocr) | Documentation describing the use cases, architecture, and how to get started using the *fin-ocr-\** repositories |
-| [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) | Browser-friendly and mobile-friendly typescript SDK implementing the core OCR functionality, using opencv and tesseract |
-| [fin-ocr-web](https://github.com/discoverfinancial/fin-ocr-web) | REST-ful service using the [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) |
-| [fin-ocr-cli](https://github.com/discoverfinancial/fin-ocr-cli) | CLI (command line interface) using the [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) |
+| [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) | Browser-friendly and mobile-friendly typescript SDK implementing the core OCR functionality.  This SDK uses [opencv.js](https://github.com/TechStark/opencv-js) and [tesseract.js](https://tesseract.projectnaptha.com/) |
+| [fin-ocr-web](https://github.com/discoverfinancial/fin-ocr-web) | REST-ful service, which uses the [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) |
+| [fin-ocr-cli](https://github.com/discoverfinancial/fin-ocr-cli) | CLI (command line interface), which uses the [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) |
 | [fin-ocr-browser](https://github.com/discoverfinancial/fin-ocr-browser) | Demo browser application using the [fin-ocr-sdk](https://github.com/discoverfinancial/fin-ocr-sdk) to scan check images from a webcam | 
 | [fin-ocr-train](https://github.com/discoverfinancial/fin-ocr-train) | Tools and documentation for training tesseract using real or synthetic data |
 
