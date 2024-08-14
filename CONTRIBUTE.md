@@ -90,7 +90,7 @@ While fin-ocr repositories are unable to accept pull requests or code contributi
 
 ## Team members
 
-Meet and join our [Team of Contributors](https://github.com/discoverfinancial/fin-ocr/wiki/Maintainers-&-Contributors).
+Meet and join our [Team of Contributors](./MAINTAINERS.md).
 
 ## Learn & listen
 <!-- Fill out Missing Project Communications -->
