@@ -1,12 +1,30 @@
+
 # Financial Focused Optical Character Recognition (FIN-OCR)
 
 A system for performing high quality Optical Character Recognition (OCR) with a focus on financial use cases.
 
 ## Overview
 
-This repository documents how to use the *fin-ocr-\** family of repositories to perform OCR.
+The FIN-OCR sdk is designed to handle a variety of financial document processing tasks. The sdk is capable of extracting MICR lines from check images, supporting both individual check processing and large-scale batch processing through X9 files.
 
-The *fin-ocr-\** repositories are as follows:
+### Key Features
+
+1. **X9 File Support**
+   - **X9 Support**
+     FIN-OCR supports X9 files, allowing you to extract and process check images from these files efficiently. This capability is ideal for financial institutions that need to process large volumes of check images quickly and accurately.
+
+   - **X9 with FIN-OCR**
+     To process X9 files with FIN-OCR:
+     - Install and configure the [fin-ocr-cli](https://github.com/discoverfinancial/fin-ocr-cli)
+     - Use the CLI to extract check images from X9 files.
+
+2. **Browser and Node.js Support**
+   - **Embeddable SDK**
+     FIN-OCR provides a flexible SDK that can be embedded in both browser and Node.js environments. This allows developers to integrate OCR capabilities directly into web applications or backend services.
+
+## Repository Breakdown
+
+The *fin-ocr-\** repositories are structured to support a wide range of use cases and implementations:
 
 | Name | Description |
 | ---- | ----------- |
