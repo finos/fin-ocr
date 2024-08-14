@@ -37,7 +37,7 @@ In general terms, an Epic is a reasonably large piece of work that is built from
 
 In fin-ocr, we prefer that Epics be created with the help of maintainers.  A maintainer creating an epic should prepend the key string `[EPIC]` to the Epic's title.  The maintainer should make sure that Tasks are defined in the Epic as individual pieces of work are defined.  Each Task should be tracked using an issue.  In that issue, all pieces of work on which the issue depends should be defined and, where possible, linked to.  The overall result, once this is accomplished, is that a user should be able to go to an Epic, see a summary of the work that the Epic represents, should be able to see the tasks that, when put together, achieve the end goal of the Epic, the order in which the tasks need to be undertaken, and what dependencies each task has.
 
-If you have any questions about Epics, please [reach out to our maintainers](https://github.com/discoverfinancial/fin-ocr/wiki/Maintainers-&-Contributors) for assistance.
+If you have any questions about Epics, please [reach out to our maintainers](./MAINTAINERS.md) for assistance.
 
 ## Contribution Process
 
