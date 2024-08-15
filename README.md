@@ -9,7 +9,7 @@ The FIN-OCR sdk is designed to handle a variety of financial document processing
 
 ### Key Features
 
-1. **X9 File Support**
+1. **Check inclearing support**
    - FIN-OCR supports X9 files, allowing you to extract and process check images from these files efficiently. This capability is ideal for financial institutions that need to process large volumes of check images quickly and accurately.
      - To process X9 files with FIN-OCR:
        - Install and configure the [fin-ocr-cli](https://github.com/discoverfinancial/fin-ocr-cli)
