@@ -96,15 +96,15 @@ Meet and join our [Team of Contributors](./MAINTAINERS.md).
 <!-- Fill out Missing Project Communications -->
 This section includes ways to get started with this open source project. It includes links to documentation and to different communication channels: 
 
-* Github Discussions
-  * Used for questions and discussions of interest to the broader community.
-  * Link: https://github.com/discoverfinancial/fin-ocr/discussions
 * Slack
   * Used for questions to project maintainers or for private chat.
   * Link: https://dfslabs.slack.com/
   * Invitation: https://join.slack.com/t/dfslabs/shared_invite/zt-2n765ndgw-4eTAaEGw6aOU~mMERwf2JQ
 * Blog/Wiki
   * https://github.com/discoverfinancial/fin-ocr/wiki
+* Github Discussions
+  * Used for questions and discussions of interest to the broader community.
+  * Link: https://github.com/discoverfinancial/fin-ocr/discussions
 
 ## Community 
 Participating in our project community spans a variety of activities:
