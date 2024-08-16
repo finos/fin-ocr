@@ -98,8 +98,8 @@ This section includes ways to get started with this open source project. It incl
 
 * Slack
   * Used for questions to project maintainers or for private chat.
-  * Link: https://dfslabs.slack.com/
   * Invitation: https://join.slack.com/t/dfslabs/shared_invite/zt-2n765ndgw-4eTAaEGw6aOU~mMERwf2JQ
+  * Link: https://dfslabs.slack.com/
 * Blog/Wiki
   * https://github.com/discoverfinancial/fin-ocr/wiki
 * Github Discussions
