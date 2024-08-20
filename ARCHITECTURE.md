@@ -8,7 +8,7 @@ The following diagram depicts the overall architecture of the FIN-OCR project.
 
   A web-based microservice which provides a REST-ful API for OCR functionality. This microservice is useful for performing OCR in an enterprise's check inclearing workflow when the main processing is performed by a language other than javascript or typescript.
   
-  See the [README](https://github.com/discoverfinancial/fin-ocr-web?tab=readme-ov-file#fin-ocr-web) for more information.
+  See the [README](https://github.com/discoverfinancial/fin-ocr-rest?tab=readme-ov-file#fin-ocr-rest) for more information.
 
 * FIN-OCR-BROWSER
 
