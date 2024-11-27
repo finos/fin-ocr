@@ -1,3 +1,4 @@
+[![DFS - Incubating](./_images/discover-incubating.svg)](https://technology.discover.com/technologies/open_source) [![Contributors-Invited](https://img.shields.io/badge/Contributors-Wanted-blue)](./CONTRIBUTE.md)
 
 # Financial Focused Optical Character Recognition (FIN-OCR)
 
