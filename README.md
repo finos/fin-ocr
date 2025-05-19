@@ -97,7 +97,7 @@ Need an ICLA? Unsure if you are covered under an existing CCLA? Email help@finos
 
 ## License
 
-Copyright 2024 Discover Financial Services
+Copyright 2024 Capital One
 
 Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
