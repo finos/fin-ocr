@@ -1,0 +1,7 @@
+SPDXVersion: SPDX-2.0
+DataLicense: CC0-1.0
+Creator: Capital One
+PackageName: FIN-OCR
+PackageOriginator: Capital One
+PackageHomePage: https://github.com/finos/fin-ocr
+PackageLicenseDeclared: Apache-2.0

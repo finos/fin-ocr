@@ -1,15 +1,18 @@
 ---
-name: "\U0001F91D {project name} Meeting Minutes"
-about: To track {project name} meeting agenda and attendance
-title: DD MMM YYYY - {project name} Meeting Minutes
+name: "\U0001F91D FIN-OCR Meeting Minutes"
+about: To track FIN-OCR meeting agenda and attendance
+title: DD MMM YYYY - FIN-OCR Meeting Minutes
 labels: meeting
 assignees: 
 
 ---
 
-
 ## Date
 YYYYMMDD - time
+
+## Meeting Details
+- Meeting link:
+- Register for future calls:
 
 ## Untracked attendees
 - Fullname, Affiliation, (optional) GitHub username
@@ -43,9 +46,3 @@ YYYYMMDD - time
 - [ ] Action 1
 - [ ] Action 2
 - [ ] ...
-
-### WebEx info
-- Meeting link:
-- Meeting number:
-- Password:
-- Call-in:
