@@ -3,21 +3,25 @@ This document provides guidance for how YOU can collaborate with our project com
 
 # FIN-OCR Contribution and Governance Policies
 
-This document describes the contribution process and governance policies of the FINOS Accessibility Theme Builder project. The project is also governed by the [Linux
+This document describes the contribution process and governance policies of the FINOS FIN-OCR project. The project is also governed by the [Linux
 Foundation Antitrust Policy](https://www.linuxfoundation.org/antitrust-policy/), and the FINOS [IP Policy](https://community.finos.org/assets/files/IP-Policy-9b1cd5f6c1d682e073c3c15224fc6d86.pdf), [Code of Conduct](https://community.finos.org/docs/governance/code-of-conduct), [Collaborative Principles](https://community.finos.org/docs/governance/collaborative-principles/), and [Meeting Procedures](https://community.finos.org/docs/governance/meeting-procedures/).
 
 ## Reporting Issues
 
-We welcome any feedback on the quality, stability or performance of Theme Builder.  If you see incorrect behavior or would like to suggest ways to improve Theme Builder, please use these guidelines to create an issue in GitHub.
-1. Please [check](https://github.com/finos/a11y-theme-builder/issues) whether there is already an open issue related to your experience/feedback. If there is, join the discussion and contribute any observations or information that may not already be present in the issue.
+We welcome any feedback on the quality, stability or performance of FIN-OCR.  If you see incorrect behavior or would like to suggest ways to improve FIN-OCR, please use these guidelines to create an issue in GitHub.
+1. Please [check](https://github.com/finos/fin-ocr/issues) whether there is already an open issue related to your experience/feedback. If there is, join the discussion and contribute any observations or information that may not already be present in the issue.
 2. If there isn't already a relevant issue, create one using one of the provided templates.  Please provide the following information:
-    1. Add appropriate tag for project -> [`SDK`, `theme builder app`]
-        * SDK - performs calculations, creates and populates CSS variables, generates CSS and JSON output
-        * theme builder app - the application that the user interacts with
+    1. Add appropriate tag for project -> [`fin-ocr`, `fin-ocr-sdk`, `fin-ocr-cli`, `fin-ocr-rest`, `fin-ocr-browser`, `fin-ocr-train`]
+        * fin-ocr - Documentation or other general updates
+        * fin-ocr-sdk - Browser-friendly and mobile-friendly typescript SDK implementing the core OCR functionality.
+        * fin-ocr-cli - CLI (command line interface) implementing the fin-ocr-sdk
+        * fin-ocr-rest - REST-ful service implementing the fin-ocr-sdk
+        * fin-ocr-browser - Demo browser application implementing the fin-ocr-sdk
+        * fin-ocr-train - Tools and documentation for training tesseract using real or synthetic data
     3. Add appropriate tag for type of issue -> [`bug`, `enhancement`]
     4. (optional) Add tag for required specialties -> [`design thinking`, `project management`, `question`, `documentation`]
-    5. Set `Projects` field to `ThemeBuilder`
-3. If you are reporting a problem that exists in Theme Builder, try to convey answers for the following:
+    5. Set `Projects` field to `FIN-OCR`
+3. If you are reporting a problem that exists in FIN-OCR, try to convey answers for the following:
     * Is the bug reproducible as explained?
     * Is it reproducible in other environments (for instance, on different browsers or devices)?
     * Are the steps to reproduce the bug clear? If not, can you describe how you might reproduce it?  Please provide as much relevant information as possible and break the instructions for reproducing the problem into clear, simple steps.
@@ -25,11 +29,11 @@ We welcome any feedback on the quality, stability or performance of Theme Builde
 4. If you would like to contribute designs, code, testing or resources toward resolving the issue, please note that in the issue.
 5. Respond to any questions or suggestions raised in the issue by other community members.
 6. We will triage all new issues at our next community meeting if you would like to offer more information as we prioritize your issue.  Click to see more [meeting
-   information](https://github.com/finos/a11y-theme-builder/wiki/Communication#meetings).
+   information](https://github.com/finos/fin-ocr/wiki/Communication#meetings).
 
 ### Asking for features/enhancements
 
-Similar to reporting issues, a user wishing to create a feature request should first [check](https://github.com/finos/a11y-theme-builder/issues) whether a similar request has already been made in the system.  Searching for features should include looking for issues with the `enhancement` label.  Additionally, searching on issues with the string `[EPIC]`in the title may prove useful.
+Similar to reporting issues, a user wishing to create a feature request should first [check](https://github.com/finos/fin-ocr/issues) whether a similar request has already been made in the system.  Searching for features should include looking for issues with the `enhancement` label.  Additionally, searching on issues with the string `[EPIC]`in the title may prove useful.
 
 If there isn't already a similar feature request, please create one using the appropriate `Feature Request Form` template.  After questions and suggestions from the community have been considered by the author and any resulting updates to the request have been made, we will triage the feature request.  If we determine the request to be sufficiently complex that we need to break work items into their own issues, the feature request will likely become an EPIC.  We will work with the author to ensure that no insights or information will be lost.
 
@@ -41,7 +45,7 @@ Before making a contribution, please take the following steps:
 3. Fork the project repository and prepare your proposed contribution.  All contributions should be created using the latest code from the upstream dev branch.
     1. Create and checkout a new branch to make changes within: `git checkout -b "thisBranchFixesIssue#<issue no.>"`
     2. Update your new branch with the latest upstream dev branch.
-    3. In commit messages, reference associated issue.  For example, `commit -m "finos/a11y-theme-builder#111: corrected button behavior"`
+    3. In commit messages, reference associated issue.  For example, `commit -m "finos/fin-ocr#111: corrected button behavior"`
     4. When your changes are ready, be sure to update your branch with the latest upstream dev branch to ensure code will merge correctly.
     5. Retest your contribution with latest updates.
 4. Submit a pull request.
@@ -51,7 +55,7 @@ NOTE: All contributors must have a contributor license agreement (CLA) on file w
 
 ## Team members
 
-Meet and join our [Team of Contributors](https://github.com/finos/a11y-theme-builder/wiki/Maintainers-&-Contributors).
+Meet and join our [Team of Contributors](https://github.com/finos/fin-ocr/wiki/Maintainers-&-Contributors).
 
 ## Learn & listen
 <!-- Fill out Missing Project Communications -->
@@ -59,12 +63,12 @@ This section includes ways to get started with your open source project. Include
 
 * Github Discussions
     * Used for questions and discussions of interest to the broader community.
-    * Link: https://github.com/finos/a11y-theme-builder/discussions
+    * Link: https://github.com/finos/fin-ocr/discussions
 * Slack
     * Used for questions to project maintainers or for private chat.
     * Link: https://join.slack.com/t/finos-lf/shared_invite/zt-24pxubwxi-vKczbM0pWYnltCRoOCDpFQ
 * Blog/Wiki
-    * Link: https://github.com/finos/a11y-theme-builder/wiki
+    * Link: https://github.com/finos/fin-ocr/wiki
 
 ## Community
 Participating in our project community spans a variety of activities:
@@ -74,12 +78,12 @@ Participating in our project community spans a variety of activities:
 * Joining Community Collaboration Space calls, held every other week at 11am ET (details on the [FINOS Calendar](https://www.finos.org/calendar))
 * Speaking at conferences and meetups to build awareness and community
 * Participating in Collaboration Summits
-* [Improving documentation](https://finos.github.io/a11y-theme-builder/)
-* [Identifying and tracking new use cases](https://finos.github.io/a11y-theme-builder/contribute)
+* [Improving documentation](https://finos.github.io/fin-ocr/)
+* [Identifying and tracking new use cases](https://finos.github.io/fin-ocr/contribute)
 * Create an example of the project in real world by building something or showing what others have built.
 * Blog about other people’s projects based on this project. Show how it’s used in daily life. Take screenshots and make videos!
 
-To join our community see the [Onboarding Resources](https://github.com/finos/a11y-theme-builder/wiki/Onboarding-Resources) page in the wiki.
+To join our community see the [Onboarding Resources](https://github.com/finos/fin-ocr/wiki/Onboarding-Resources) page in the wiki.
 
 ## Project Management
 <!-- Fill out Missing Project Communications Details-->
@@ -87,13 +91,13 @@ Our project uses a combination of GitHub Issues and Project Kanban Dashboards to
 
 ### Project Roadmap
 <!-- ToDo provide Wiki URL for release plan. -->
-Our vision for the maturation of this project is outlined in the [Project Roadmap](https://github.com/finos/a11y-theme-builder/wiki/Roadmap) which is reflective of our intended milestones/release plan.
+Our vision for the maturation of this project is outlined in the [Project Roadmap](https://github.com/finos/fin-ocr/wiki/Roadmap) which is reflective of our intended milestones/release plan.
 
 ### Meetings
 
 Logistics for Project Triage Sessions:
-* [Meeting Details](https://github.com/finos/a11y-theme-builder/wiki/Communication#meetings)
-* [Meeting Minutes](https://github.com/finos/a11y-theme-builder/wiki/Meeting-Minutes)
+* [Meeting Details](https://github.com/finos/fin-ocr/wiki/Communication#meetings)
+* [Meeting Minutes](https://github.com/finos/fin-ocr/wiki/Meeting-Minutes)
 
 Project Management:
 * [Project Kanban Dashboard](https://github.com/orgs/finos/projects/1/views/1)
@@ -131,7 +135,7 @@ References:
 
 ## Testing
 Testing new releases and/or features is a great way to contribute to the community. If you find issues, please submit an [Issue/Feature
-Report](https://github.com/finos/a11y-theme-builder/issues).
+Report](https://github.com/finos/fin-ocr/issues).
 
 ## Documentation
 [Learn](./DEVELOP_DOCS.md) how to develop, build, test, and contribute to the online docs.
