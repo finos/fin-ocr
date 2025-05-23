@@ -8,23 +8,23 @@ The following diagram depicts the overall architecture of the FIN-OCR project.
 
   A web-based microservice which provides a REST-ful API for OCR functionality. This microservice is useful for performing OCR in an enterprise's check inclearing workflow when the main processing is performed by a language other than javascript or typescript.
   
-  See the [README](https://github.com/discoverfinancial/fin-ocr-rest?tab=readme-ov-file#fin-ocr-rest) for more information.
+  See the [README](https://github.com/finos/fin-ocr-rest?tab=readme-ov-file#fin-ocr-rest) for more information.
 
 * FIN-OCR-BROWSER
 
   A browser-based demo application which uses your webcam to capture check images and translate the MICR line.  This uses the OCR SDK to to perform the actual OCR processing.
   
-  See the [README](https://github.com/discoverfinancial/fin-ocr-browser?tab=readme-ov-file#fin-ocr-browser-based-demo-application) for more information.
+  See the [README](https://github.com/finos/fin-ocr-browser?tab=readme-ov-file#fin-ocr-browser-based-demo-application) for more information.
 
 * FIN-OCR-CLI
 
   The `ocr` command line interface tool is used for testing and training for this project.
   
-  See the [README](https://github.com/discoverfinancial/fin-ocr-cli?tab=readme-ov-file#fin-ocr-cli) for more information.
+  See the [README](https://github.com/finos/fin-ocr-cli?tab=readme-ov-file#fin-ocr-cli) for more information.
 
 * FIN-OCR-SDK
 
-  The [OCR SDK](https://github.com/discoverfinancial/fin-ocr-sdk?tab=readme-ov-file#fin-ocr-sdk) is the processing engine.
+  The [OCR SDK](https://github.com/finos/fin-ocr-sdk?tab=readme-ov-file#fin-ocr-sdk) is the processing engine.
 
   It contains a media-specific layer at the top, providing ease-to-use for specific use cases.  Currently only bank checks are supported, but credit cards or other may be supported in the future at this layer.
 
@@ -41,7 +41,7 @@ The following diagram depicts the overall architecture of the FIN-OCR project.
 
      1. tesseract translator
      
-        Generally speaking, tesseract may or may not require special training, depending upon the symbols that need to be processed and whether or not public training data for your symbols of interest already exist and are accurate enough.  For the MICR symbols required for check processing, there is public training data available [here](https://github.com/BigPino67/Tesseract-MICR-OCR/blob/master/Tessdata/mcr.traineddata); however, this has not proven accurate enough.  Therefore, see [the training repository](https://github.com/discoverfinancial/fin-ocr-train) for instructions on how we trained tesseract along with the current training data.
+        Generally speaking, tesseract may or may not require special training, depending upon the symbols that need to be processed and whether or not public training data for your symbols of interest already exist and are accurate enough.  For the MICR symbols required for check processing, there is public training data available [here](https://github.com/BigPino67/Tesseract-MICR-OCR/blob/master/Tessdata/mcr.traineddata); however, this has not proven accurate enough.  Therefore, see [the training repository](https://github.com/finos/fin-ocr-train) for instructions on how we trained tesseract along with the current training data.
 
      2. opencv-based translator
 
@@ -53,7 +53,7 @@ The following diagram depicts the overall architecture of the FIN-OCR project.
 
 * FIN-OCR-TRAIN
 
-  The [training repository](https://github.com/discoverfinancial/fin-ocr-train) contains the tooling which was used to train tesseract.  It provides tooling for training based both on real and synthethic data. 
+  The [training repository](https://github.com/finos/fin-ocr-train) contains the tooling which was used to train tesseract.  It provides tooling for training based both on real and synthethic data. 
   
   > NOTE: Training is a development or build time activity.  It produces a tesseract *traineddata* file that is bundled with the SDK.  Training tesseract does not currently happen at runtime; however, runtime training would be a potential area for research.
 

@@ -11,8 +11,8 @@ It provides a tutorial to guide you through the following tasks:
 ### How to set up your developer environment
 
 Clone the following repositories into the same parent directory:
-* [SDK](https://github.com/discoverfinancial/fin-ocr-sdk)
-* [CLI](https://github.com/discoverfinancial/fin-ocr-cli)
+* [SDK](https://github.com/finos/fin-ocr-sdk)
+* [CLI](https://github.com/finos/fin-ocr-cli)
 
 Let **SDK-DIR** refer to the local SDK cloned directory and **CLI-DIR** refer to the local CLI cloned directory.
 
@@ -68,7 +68,7 @@ The first image is the original image being processed.
 
 If you scroll to the bottom, you'll see the "MICR" line that was located.
 
-> NOTE: See the [architecture diagram](https://github.com/discoverfinancial/fin-ocr/blob/main/ARCHITECTURE.md) and note that the "Core OCR" process occurs in two phases: first a preprocessing phase and second the translation phase.
+> NOTE: See the [architecture diagram](https://github.com/finos/fin-ocr/blob/main/ARCHITECTURE.md) and note that the "Core OCR" process occurs in two phases: first a preprocessing phase and second the translation phase.
 
 If the MICR line was not properly located, then the problem occurred in the preprocessing phase, so you'll want to look at previous images to determine why the location logic failed.  For example, perhaps skew correction failed.
 
@@ -76,7 +76,7 @@ However, if the MICR line was correctly located but one or both of the translato
 
 ### How to train and test with a new tesseract traineddata file
 
-See [training tesseract](https://github.com/discoverfinancial/fin-ocr-train?tab=readme-ov-file#training-tesseract) for tools and information regarding how to train tesseract.  Once training is complete, you will want to test the accuracy with your new traineddata file to see if it has improved.
+See [training tesseract](https://github.com/finos/fin-ocr-train?tab=readme-ov-file#training-tesseract) for tools and information regarding how to train tesseract.  Once training is complete, you will want to test the accuracy with your new traineddata file to see if it has improved.
 
 In your CLI-DIR, you'll see a `set-td` script.  You can use this to set the path to the newly generated `micr-e13b.traineddata` file as follows:
 ```
@@ -93,7 +93,7 @@ This allows you to measure the accuracy using only tesseract and can therefore h
 
 Suppose that the opencv translator correctly locates a specific character but it incorrectly translates that character.  You can improve the accuracy of the opencv translator to recognize that character as follows.
 
-1. Add two files to the [cli corrections directory](https://github.com/discoverfinancial/fin-ocr-cli/tree/main/files/corrections).  The prefix of these two files must be the same and the suffices must be '.tif' and '.ct', respectively.
+1. Add two files to the [cli corrections directory](https://github.com/finos/fin-ocr-cli/tree/main/files/corrections).  The prefix of these two files must be the same and the suffices must be '.tif' and '.ct', respectively.
 
    For example, the file `check-2-char-18.tif` contains the TIFF image of the character which the opencv translator incorrectly translated, and the file `check-2-char-18.ct` contains "7:1" where "7" is the character that is on the `check-2-char-18.tif` image and "1" is the number of contours in the character.
 
